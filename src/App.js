@@ -19,7 +19,7 @@ class App extends Component {
 
 
     return (
-      <div>
+      <div className="App">
         <Personal />
         <Education />
         <Work />
