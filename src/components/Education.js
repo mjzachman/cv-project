@@ -16,8 +16,8 @@ class Education extends Component {
 
 
     return (
-      <div>
-      
+      <div className="section">
+        <h1>Education</h1>
       </div>
     );
   }

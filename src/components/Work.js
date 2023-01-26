@@ -16,8 +16,8 @@ class Work extends Component {
 
 
     return (
-      <div>
-      
+      <div className="section">
+        <h1>Work</h1>
       </div>
     );
   }
