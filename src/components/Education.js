@@ -1,7 +1,5 @@
-// Education.js
-
 import React, { Component } from "react";
-
+import InputDiv from "./InputDiv";
 
 class Education extends Component {
   constructor() {
@@ -19,35 +17,27 @@ class Education extends Component {
       <div className="section">
         <h2>Education</h2>
         <form>
-        <fieldset id="edu-form">
-            <div class="input-div">
-                <label htmlFor="eduInst">Insitution Name:</label>
-                <input
-                  type="text"
-                  id="eduInst"
-                />
-            </div>
-            <div class="input-div">
-                <label htmlFor="eduStudy">Area of Study:</label>
-                <input
-                  type="text"
-                  id="eduStudy"
-                />
-            </div>
-            <div class="input-div">
-                <label htmlFor="eduLevel">Level of Education completed:</label>
-                <input
-                  type="text"
-                  id="eduLevel"
-                />
-            </div>
-            <div class="input-div">
-                <label htmlFor="eduDate">Completion Date:</label>
-                <input
-                  type="date"
-                  id="eduDate"
-                />
-            </div>
+        <fieldset class="short-form">
+            <InputDiv 
+              id="eduInst"
+              type="text"
+              text="Institution Name: "
+              />
+            <InputDiv 
+              id="eduStudy"
+              type="text"
+              text="Area of Study: "
+              />
+            <InputDiv 
+              id="eduLevel"
+              type="text"
+              text="Level of Education Completed: "
+              />
+            <InputDiv 
+              id="eduDate"
+              type="date"
+              text="Date Completed: "
+              />
         </fieldset>
         <button type="submit">
           Submit

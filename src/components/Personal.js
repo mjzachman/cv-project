@@ -1,7 +1,5 @@
-// Personal.js
-
 import React, { Component } from "react";
-
+import InputDiv from "./InputDiv";
 
 class Personal extends Component {
   constructor() {
@@ -20,48 +18,36 @@ class Personal extends Component {
         <h2>Personal Information</h2>
         <form>
         <fieldset>
-            <div class="input-div">
-                <label htmlFor="nameInput">First Name:</label>
-                <input
-                  type="text"
-                  id="name"
-                />
-            </div>
-            <div class="input-div">
-                <label htmlFor="emailInput">Middle Name:</label>
-                <input
-                  type="text"
-                  id="name"
-                />
-            </div>
-            <div class="input-div">
-                <label htmlFor="phoneInput">Last Name:</label>
-                <input
-                  type="text"
-                  id="name"
-                />
-            </div>
-            <div class="input-div">
-                <label htmlFor="nameInput">Age:</label>
-                <input
-                  type="number"
-                  id="age"
-                />
-            </div>
-            <div class="input-div">
-                <label htmlFor="emailInput">Email Address:</label>
-                <input
-                  type="email"
-                  id="email"
-                />
-            </div>
-            <div class="input-div">
-                <label htmlFor="phoneInput">Phone Number:</label>
-                <input
-                  type="tel"
-                  id="phone"
-                />
-            </div>
+            <InputDiv 
+              id="userFirst"
+              type="text"
+              text="First Name: "
+              />
+            <InputDiv 
+              id="userMid"
+              type="text"
+              text="Middle Name: "
+              />
+            <InputDiv 
+              id="userLast"
+              type="text"
+              text="Last Name: "
+              />
+            <InputDiv 
+              id="userAge"
+              type="number"
+              text="Age: "
+              />
+            <InputDiv 
+              id="userEmail"
+              type="email"
+              text="Email Address: "
+              />
+            <InputDiv 
+              id="userPhone"
+              type="tel"
+              text="Phone Number: "
+              />
         </fieldset>
         <button type="submit">
           Submit

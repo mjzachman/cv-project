@@ -9,6 +9,7 @@
   width: 100vw;
   padding: 50px;
   background-color: darkslategray;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .section {
@@ -34,7 +35,7 @@ fieldset {
   border: 0;
 }
 
-#edu-form {
+.short-form {
   height: 80px;
 }
 
