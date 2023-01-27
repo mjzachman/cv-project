@@ -17,7 +17,42 @@ class Education extends Component {
 
     return (
       <div className="section">
-        <h1>Education</h1>
+        <h2>Education</h2>
+        <form>
+        <fieldset id="edu-form">
+            <div class="input-div">
+                <label htmlFor="eduInst">Insitution Name:</label>
+                <input
+                  type="text"
+                  id="eduInst"
+                />
+            </div>
+            <div class="input-div">
+                <label htmlFor="eduStudy">Area of Study:</label>
+                <input
+                  type="text"
+                  id="eduStudy"
+                />
+            </div>
+            <div class="input-div">
+                <label htmlFor="eduLevel">Level of Education completed:</label>
+                <input
+                  type="text"
+                  id="eduLevel"
+                />
+            </div>
+            <div class="input-div">
+                <label htmlFor="eduDate">Completion Date:</label>
+                <input
+                  type="date"
+                  id="eduDate"
+                />
+            </div>
+        </fieldset>
+        <button type="submit">
+          Submit
+        </button>
+      </form>
       </div>
     );
   }

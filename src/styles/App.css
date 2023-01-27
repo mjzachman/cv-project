@@ -34,6 +34,10 @@ fieldset {
   border: 0;
 }
 
+#edu-form {
+  height: 80px;
+}
+
 .input-div {
   display: flex;
 }
