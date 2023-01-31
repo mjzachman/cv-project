@@ -17,7 +17,7 @@ class Education extends Component {
       <div className="section">
         <h2>Education</h2>
         <form>
-        <fieldset class="short-form">
+        <fieldset className="short-form">
             <InputDiv 
               id="eduInst"
               type="text"

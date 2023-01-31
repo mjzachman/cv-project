@@ -2,13 +2,22 @@ import React, { Component } from "react";
 import InputDiv from "./InputDiv";
 
 class Personal extends Component {
-  constructor() {
-    super();
-
+  constructor(props) {
+    super(props);
+    this.state = {value: ''};
 
     
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
+
   
+
+  handleSubmit(event) {
+    //get the state of each input div
+    alert('A name was submitted: ' + this.state.value);
+    event.preventDefault();
+  }
+
   render() {
     
 
@@ -16,7 +25,7 @@ class Personal extends Component {
     return (
       <div className="section">
         <h2>Personal Information</h2>
-        <form>
+        <form onSubmit= {this.handleSubmit} >
         <fieldset>
             <InputDiv 
               id="userFirst"

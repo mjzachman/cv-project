@@ -17,7 +17,7 @@ class Work extends Component {
       <div className="section">
         <h2>Work History</h2>
         <form>
-        <fieldset class="short-form">
+        <fieldset className="short-form">
             <InputDiv 
               id="jobTitle"
               type="text"
