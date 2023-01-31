@@ -4,26 +4,26 @@ import React, { Component } from "react";
 class InputDiv extends Component {
   constructor(props) {
     super(props);
+    this.state = {value: ''};
 
-    this.handleChange = this.handleChange.bind(this);
-    
+
     
   }
 
-  handleChange(event) {
-    this.setState({value: event.target.value});
-  }
+  
 
   render() {
-    const { id, type, text } = this.props;
+    const { name, type, text, value, handleInputChange } = this.props;
 
     return (
         <div className="input-div">
-            <label htmlFor={id}>{text}</label>
+            <label htmlFor={name}>{text}</label>
             <input
             type= {type}
-            id= {id}
-            onChange = {this.handleChange}
+            name= {name}
+            value={value}
+            defaultValue=""
+            onChange = {handleInputChange}
             />
         </div>
     );
