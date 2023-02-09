@@ -41,10 +41,22 @@ fieldset {
 
 .input-div {
   display: flex;
+  width: 360px;
+  height: 22px;
 }
 
 label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 150px;
+}
+
+.data{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
 
 button {
